@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <link rel="shortcut icon" href="/logo1.jpg" type="image/x-icon">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocean Fragrances</title>
+  <link rel="stylesheet" href="ocean.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Theme and Language Toggle Controls -->
+<div class="slider">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="brand" data-translate="brandName">Ocean Fragrances</div>
+      <ul class="nav-links">
+        <li><a href="#contact" data-translate="orderNow">اطلب اوردر</a></li>
+        <li><a href="#products" data-translate="available">المتوفــر</a></li>
+        <li><a href="#bundles" data-translate="bundles">Bundles</a></li>
+        <li><a href="#footer" data-translate="contactUs">تواصل معنا</a></li>
+      </ul>
+      
+      <!-- Toggle Buttons in Navbar -->
+      <div class="theme-controls">
+        <!-- Theme Toggle (Dark/Light Mode) -->
+        <div class="toggle-container">
+          <div class="theme-icon sun-icon active" onclick="toggleTheme()">☀️</div>
+          <div class="theme-icon moon-icon" onclick="toggleTheme()">🌙</div>
+        </div>
+        
+        <!-- Language Toggle (English/Arabic) -->
+        <div class="toggle-container">
+          <div class="lang-icon en-icon active" onclick="toggleLanguage()">EN</div>
+          <div class="lang-icon ar-icon" onclick="toggleLanguage()">AR</div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slides -->
+  <div class="slides">
+    <div class="slide"><img src="images/i1.png" alt="Slide 1"></div>
+    <div class="slide"><img src="images/i2.jpg" alt="Slide 2"></div>
+    <div class="slide"><img src="images/i3.png" alt="Slide 3"></div>
+  </div>
+
+  <!-- Text Overlay -->
+  <div class="slider-text">
+    <h2 data-translate="welcomeTitle">Welcome to Ocean Fragrance</h2>
+    <h3 data-translate="welcomeSubtitle">✨BREATHE OF LUXURY✨</h3>
+  </div>
+</div>
+
+<section class="honeycomb-section" id="products">
+    <div class="honeycomb-container">
+      <h2 class="pro"> <span class="crimson" data-translate="available"> <span data-translate="products">Our Products</span></h2>
+        <!-- Row 1: 3 cards (odd row, centered) -->
+        <div class="row odd">
+            <div class="honeycomb-card">
+                <div class="card-image" style="background-image: url(images/Atheer.jpg);"></div>
+                <div class="card-info">
+                    <h3 data-translate="product1Name">Atheer</h3>
+                    <p data-translate="product1Desc">Inspired by Khamra.</p>
+                </div>
+            </div>
+            <div class="honeycomb-card">
+                <div class="card-image" style="background-image: url(images/Glow\ candy.jpg);"></div>
+                <div class="card-info">
+                    <h3 data-translate="product2Name">Glow Candy</h3>
+                    <p data-translate="product2Desc">Inspired by Yara lattafa.</p>
+                </div>
+            </div>
+            <div class="honeycomb-card">
+                <div class="card-image" style="background-image: url(images/Grevin.jpg);"></div>
+                <div class="card-info">
+                    <h3 data-translate="product3Name">Grevin</h3>
+                    <p data-translate="product3Desc">Inspired By Le Beau Paradise Garden Jean Paul Gaultier.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2: 2 cards (even row, centered with right stagger offset) -->
+        <div class="row even" id="second-row">
+            <div class="honeycomb-card">
+                <div class="card-image" style="background-image: url(images/MATEU\ DENARO.jpg);"></div>
+                <div class="card-info">
+                    <h3 data-translate="product4Name">Mateu Denaro</h3>
+                    <p data-translate="product4Desc">Inspired ROSENDO MATEU 5.</p>
+                </div>
+            </div>
+            <div class="honeycomb-card">
+                <div class="card-image" style="background-image: url(images/MIDNIGHT\ ANGEL\'S.jpg);"></div>
+                <div class="card-info">
+                    <h3 data-translate="product5Name">Midnight Angel's</h3>
+                    <p data-translate="product5Desc">Inspired by Angel Share Paradise By Kilian.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 3: 3 cards (odd row, centered) -->
+        <div class="row odd">
+            <div class="honeycomb-card">
+                <div class="card-image" style="background-image: url(images/Portfino1.jpg);"></div>
+                <div class="card-info">
+                    <h3 data-translate="product6Name">Portofino</h3>
+                    <p data-translate="product6Desc">Inspired by VALENTINO BORN IN ROME Intenes</p>
+                </div>
+            </div>
+            <div class="honeycomb-card">
+                <div class="card-image" style="background-image: url(images/reo.jpg);"></div>
+                <div class="card-info">
+                    <h3 data-translate="product7Name">Reo</h3>
+                    <p data-translate="product7Desc">Inspired by Symphony Louis Vuitton.</p>
+                </div>
+            </div>
+            <div class="honeycomb-card">
+                <div class="card-image" style="background-image: url(images/VELVET\ ANGEL’S.jpg);"></div>
+                <div class="card-info">
+                    <h3 data-translate="product8Name">Velvet Angle's</h3>
+                    <p data-translate="product8Desc">Inspired by Angel Share By Kilian.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 4: 2 cards (even row, centered with right stagger offset) -->
+        <div class="row even" id="last-row">
+            <div class="honeycomb-card">
+                <div class="card-image" style="background-image: url(images/volcano.jpg);"></div>
+                <div class="card-info">
+                    <h3 data-translate="product9Name">Volcano</h3>
+                    <p data-translate="product9Desc">Our Signature Scent.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bundles Section Start -->
+<section class="bundles-section" id="bundles">
+  <h2  data-translate="bundlesTitle" id="bundles-title" >Our <span class="crimson">Bundles</span></h2>
+  <div class="container">
+    <div class="bundles-container">
+      <div class="bundle-item" id="first-bundle">
+        <img src="images/ezgif-35b0483583e8ef.jpg" alt="Bundle 1">
+        <div class="bundle-info">
+          <h3 data-translate="bundle1Name">Gladitour</h3>
+          <p data-translate="bundle1Desc">two Premium scents in one bundle.
+            <p>The Bundle consists od (Grevin , Portofino)</p>
+          </p>
+        </div>
+      </div>
+      <!-- <div class="bundle-item">
+        <img src="images/bundle2.jpg" alt="Bundle 2">
+        <div class="bundle-info">
+          <h3 data-translate="bundle2Name">Romantic Collection</h3>
+          <p data-translate="bundle2Desc">Perfect for special occasions.</p>
+        </div>
+      </div>
+      <div class="bundle-item">
+        <img src="images/bundle3.jpg" alt="Bundle 3">
+        <div class="bundle-info">
+          <h3 data-translate="bundle3Name">Daily Essentials</h3>
+          <p data-translate="bundle3Desc">Everyday fragrances for the modern individual.</p>
+        </div>
+      </div>
+      <div class="bundle-item">
+        <img src="images/bundle4.jpg" alt="Bundle 4">
+        <div class="bundle-info">
+          <h3 data-translate="bundle4Name">Exotic Mix</h3>
+          <p data-translate="bundle4Desc">Adventure in every spray.</p>
+        </div>
+      </div>
+      <div class="bundle-item">
+        <img src="images/bundle5.jpg" alt="Bundle 5">
+        <div class="bundle-info">
+          <h3 data-translate="bundle5Name">Seasonal Favorites</h3>
+          <p data-translate="bundle5Desc">Fragrances for every season.</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+<!-- Bundles Section End -->
+
+<!-- Contact Start -->
+<section id="contact" class="contact" >
+<div class="container">
+    <h2><i class="fa-solid fa-headset"></i> <span data-translate="getIn"> Order </span> <span class="Order" id="con" data-translate="touch">Now</span></h2>
+    <div class="row">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+        <dotlottie-player src="https://lottie.host/5db9b6a1-37bb-42f4-b020-86d6c0fc640f/2mlMVJ7sj7.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        
+        <form action="https://formsubmit.co/robloxation213456@gmail.com" method="POST">
+            <input type="text" name="Name" id="Name" data-translate-placeholder="namePlaceholder" placeholder="Name" required>
+            <input type="email" name="Email" id="Email" data-translate-placeholder="emailPlaceholder" placeholder="Email" required>
+            <textarea name="Message" id="Message" cols="30" rows="10" data-translate-placeholder="messagePlaceholder" placeholder="Message" required></textarea>
+
+            <button type="submit" class="btn-primary" data-translate="submitBtn">Submit</button>
+        </form>
+    </div>
+</div>
+</section>
+<!-- Contact End -->
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" class="scroll-to-top-btn" title="Scroll to Top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Footer Start -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61567718609155" target="_blank" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ocean_fragrancess/?hl=ar" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@ocean_fragrances?_t=ZS-90IeAYI53iL&_r=1 "target="_blank" class="social-link" aria-label="Twitter"><i class="fab fa-tiktok"></i></a>
+      <a href="https://api.whatsapp.com/send/?phone=%2B201098693635&text&type=phone_number&app_absent=0" target="_blank" class="social-link" aria-label="YouTube"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <span id="gold" data-translate="brief">Luxurious niche perfumes inspired by simulation, since 2024</span>
+    <p class="copyright">&copy; 2025 Ocean Fragrances. All rights reserved.  </p>
+
+  </div>
+</footer>
+<!-- Footer End -->
+
+<script src="ocean.js"></script>
+<script src="toggle-script.js"></script>
+</body>
+</html>
