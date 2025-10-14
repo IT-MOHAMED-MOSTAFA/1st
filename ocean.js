@@ -60,7 +60,7 @@ const translations = {
     product9Desc: "Our Signature Scent.",
     
     // Bundles Section
-    // bundlesTitle: "Our Bundles",
+    bundlesTitle: "Our Bundles",
     bundles: "Bundles",
     bundle1Name: "Gladiator",
     bundle1Desc: "Two Premium scents in one bundle.",
@@ -283,3 +283,4 @@ scrollToTopBtn.addEventListener('click', scrollToTop);
 // Make functions globally accessible
 window.toggleTheme = toggleTheme;
 window.toggleLanguage = toggleLanguage;
+
