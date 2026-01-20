@@ -80,7 +80,8 @@ const translations = {
     emailPlaceholder: "Email",
     messagePlaceholder: "Message",
     brief:"Luxurious niche perfumes inspired by simulation, since 2024",
-    submitBtn: "Submit"
+    submitBtn: "Submit",
+    InquireNow: "Inquire Now"
   },
   ar: {
     // Brand & Navigation
@@ -132,7 +133,8 @@ const translations = {
     emailPlaceholder: "البريد الإلكتروني",
     messagePlaceholder: "الرسالة",
     brief:"عطور نيش فاخرة مستوحاة من المحاكاة، منذ عام 2024",
-    submitBtn: "إرسال"
+    submitBtn: "إرسال",
+    InquireNow: "إستعلم الآن"
   }
 };
 
@@ -284,3 +286,23 @@ scrollToTopBtn.addEventListener('click', scrollToTop);
 window.toggleTheme = toggleTheme;
 window.toggleLanguage = toggleLanguage;
 
+function sendInquiry(productName, productCode) {
+    // 1. رقم التاجر (Ocean Fragrances)
+    const phone = "201093550033"; 
+
+    let message = "";
+    
+    // 2. التحقق إذا كان الاستفسار عاماً أم لمنتج معين
+    if (productCode === 'GEN-SUPPORT') {
+        message = "مرحباً Ocean Fragrances، أود الاستفسار عن منتجاتكم وعروضكم المتاحة.";
+    } else {
+        message = `مرحباً Ocean Fragrances،\nلقد أعجبني هذا المنتج وأود معرفة سعره وتفاصيله:\n- المنتج: ${productName}\n- الكود: ${productCode}`;
+    }
+
+    // 3. تشفير الرسالة لفتح الرابط بشكل صحيح
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
+
+    // 4. فتح الواتساب في نافذة جديدة
+    window.open(whatsappUrl, '_blank');
+}

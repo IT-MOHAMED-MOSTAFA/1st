@@ -21,7 +21,7 @@
         <li><a href="#contact" data-translate="orderNow">اطلب اوردر</a></li>
         <li><a href="#products" data-translate="available">المتوفــر</a></li>
         <li><a href="#bundles" data-translate="bundles">Bundles</a></li>
-        <li><a href="#footer" data-translate="contactUs">تواصل معنا</a></li>
+        <!-- <li><a href="#footer" data-translate="contactUs">تواصل معنا</a></li> -->
       </ul>
       
       <!-- Toggle Buttons in Navbar -->
@@ -65,6 +65,9 @@
                 <div class="card-info">
                     <h3 data-translate="product1Name">Atheer</h3>
                     <p data-translate="product1Desc">Inspired by Khamra.</p>
+                    <button class="whatsapp-btn" onclick="sendInquiry('Atheer', 'ATH-01')">
+        <i class="fab fa-whatsapp"></i> <span data-translate="InquireNow">إستعلم الآن</span>
+    </button>
                 </div>
             </div>
             <div class="honeycomb-card">
@@ -72,6 +75,9 @@
                 <div class="card-info">
                     <h3 data-translate="product2Name">Glow Candy</h3>
                     <p data-translate="product2Desc">Inspired by Yara lattafa.</p>
+                    <button class="whatsapp-btn" onclick="sendInquiry('Yara', 'YA-01')">
+        <i class="fab fa-whatsapp"></i> <span data-translate="InquireNow">إستعلم الآن</span>
+    </button>
                 </div>
             </div>
             <div class="honeycomb-card">
@@ -79,6 +85,9 @@
                 <div class="card-info">
                     <h3 data-translate="product3Name">Grevin</h3>
                     <p data-translate="product3Desc">Inspired By Le Beau Paradise Garden Jean Paul Gaultier.</p>
+                    <button class="whatsapp-btn" onclick="sendInquiry('Grevin', 'GRE-01')">
+        <i class="fab fa-whatsapp"></i> <span data-translate="InquireNow">إستعلم الآن</span>
+    </button>
                 </div>
             </div>
         </div>
@@ -90,6 +99,9 @@
                 <div class="card-info">
                     <h3 data-translate="product4Name">Mateu Denaro</h3>
                     <p data-translate="product4Desc">Inspired ROSENDO MATEU 5.</p>
+                    <button class="whatsapp-btn" onclick="sendInquiry('Mateu Denaro', 'MATEU-01')">
+        <i class="fab fa-whatsapp"></i> <span data-translate="InquireNow">إستعلم الآن</span>
+    </button>
                 </div>
             </div>
             <div class="honeycomb-card">
@@ -97,6 +109,9 @@
                 <div class="card-info">
                     <h3 data-translate="product5Name">Midnight Angel's</h3>
                     <p data-translate="product5Desc">Inspired by Angel Share Paradise By Kilian.</p>
+                    <button class="whatsapp-btn" onclick="sendInquiry('Midnight Angel\'s', 'MIDNIGHT-01')">
+        <i class="fab fa-whatsapp"></i> <span data-translate="InquireNow">إستعلم الآن</span>
+    </button>
                 </div>
             </div>
         </div>
@@ -108,6 +123,9 @@
                 <div class="card-info">
                     <h3 data-translate="product6Name">Portofino</h3>
                     <p data-translate="product6Desc">Inspired by VALENTINO BORN IN ROME Intenes</p>
+                    <button class="whatsapp-btn" onclick="sendInquiry('Portofino', 'PORTO-01')">
+        <i class="fab fa-whatsapp"></i> <span data-translate="InquireNow">إستعلم الآن</span>
+    </button>
                 </div>
             </div>
             <div class="honeycomb-card">
@@ -115,6 +133,9 @@
                 <div class="card-info">
                     <h3 data-translate="product7Name">Reo</h3>
                     <p data-translate="product7Desc">Inspired by Symphony Louis Vuitton.</p>
+                    <button class="whatsapp-btn" onclick="sendInquiry('Reo', 'REO-01')">
+        <i class="fab fa-whatsapp"></i> <span data-translate="InquireNow">إستعلم الآن</span>
+    </button>
                 </div>
             </div>
             <div class="honeycomb-card">
@@ -122,6 +143,9 @@
                 <div class="card-info">
                     <h3 data-translate="product8Name">Velvet Angle's</h3>
                     <p data-translate="product8Desc">Inspired by Angel Share By Kilian.</p>
+                    <button class="whatsapp-btn" onclick="sendInquiry('Velvet Angle\'s', 'VELVET-01')">
+        <i class="fab fa-whatsapp"></i> <span data-translate="InquireNow">إستعلم الآن</span>
+    </button>
                 </div>
             </div>
         </div>
@@ -133,6 +157,9 @@
                 <div class="card-info">
                     <h3 data-translate="product9Name">Volcano</h3>
                     <p data-translate="product9Desc">Our Signature Scent.</p>
+                    <button class="whatsapp-btn" onclick="sendInquiry('Volcano', 'VOLCANO-01')">
+        <i class="fab fa-whatsapp"></i> <span data-translate="InquireNow">إستعلم الآن</span>
+    </button>
                 </div>
             </div>
         </div>
@@ -151,6 +178,9 @@
           <p data-translate="bundle1Desc">two Premium scents in one bundle.
             <p>The Bundle consists od (Grevin , Portofino)</p>
           </p>
+          <button class="whatsapp-btn" onclick="sendInquiry('Gladitour', 'Bundle-01')">
+        <i class="fab fa-whatsapp"></i> <span data-translate="InquireNow">إستعلم الآن</span>
+    </button>
         </div>
       </div>
       <!-- <div class="bundle-item">
@@ -186,26 +216,7 @@
 </section>
 <!-- Bundles Section End -->
 
-<!-- Contact Start -->
-<section id="contact" class="contact" >
-<div class="container">
-    <h2><i class="fa-solid fa-headset"></i> <span data-translate="getIn"> Order </span> <span class="Order" id="con" data-translate="touch">Now</span></h2>
-    <div class="row">
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-        <dotlottie-player src="https://lottie.host/5db9b6a1-37bb-42f4-b020-86d6c0fc640f/2mlMVJ7sj7.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
-        
-        <form action="https://formsubmit.co/robloxation213456@gmail.com" method="POST">
-            <input type="text" name="Name" id="Name" data-translate-placeholder="namePlaceholder" placeholder="Name" required>
-            <input type="email" name="Email" id="Email" data-translate-placeholder="emailPlaceholder" placeholder="Email" required>
-            <textarea name="Message" id="Message" cols="30" rows="10" data-translate-placeholder="messagePlaceholder" placeholder="Message" required></textarea>
-
-            <button type="submit" class="btn-primary" data-translate="submitBtn">Submit</button>
-        </form>
-    </div>
-</div>
-</section>
-<!-- Contact End -->
 
 <!-- Scroll to Top Button -->
 <button id="scrollToTopBtn" class="scroll-to-top-btn" title="Scroll to Top">
@@ -230,5 +241,9 @@
 
 <script src="ocean.js"></script>
 <script src="toggle-script.js"></script>
+<button class="floating-whatsapp" onclick="sendInquiry('General', 'GEN-SUPPORT')">
+    <i class="fab fa-whatsapp"></i>
+    <span data-translate="contactUs">تواصل معنا</span>
+</button>
 </body>
 </html>

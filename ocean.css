@@ -1111,3 +1111,63 @@ header {
   border: #40a2e3;
   border-radius: 15px;
 }
+
+/* WhatsApp Inquiry Button Inside Cards */
+.whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: inherit;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+}
+
+/* General Inquiry Floating Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* ليكون عكس زر الـ Scroll to Top */
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 2000;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.floating-whatsapp i { font-size: 24px; }
+.floating-whatsapp span { font-size: 8px; font-weight: bold; margin-top: 2px; }
+
+/* Responsive for Floating Button */
+@media (max-width: 575px) {
+    .floating-whatsapp {
+        width: 50px;
+        height: 50px;
+    }
+    .floating-whatsapp i { font-size: 20px; }
+}
